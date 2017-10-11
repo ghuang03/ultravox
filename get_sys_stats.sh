@@ -9,3 +9,5 @@ top -H -p `pidof dvr_client`, `pidof iptv_transmuxer`, `pidof ntf_server` -b -n 
 mpstat -P ALL 30 1000 > mpstat.log &
 #for i in `seq 1 250`; do timeout 120 strace -p `pidof dvr_client` -p `pidof iptv_transmuxer` -p `pidof ntf_server` -f -r -c -o strace_dvr.$i; done 
 df -h
+df -h
+df -h
